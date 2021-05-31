@@ -73,6 +73,9 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 
+" Always show gutter
+:set signcolumn=yes
+
 " Enable VIM Plugin Manager
 call plug#begin()
 Plug 'preservim/NERDTree' |
