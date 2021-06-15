@@ -1,0 +1,10 @@
+{
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  "eslint.codeAction.disableRuleComment": {
+    "enable": true,
+    "location": "separateLine"
+  },
+  "coc.preferences.formatOnSaveFiletypes": ["js", "ts"]
+}

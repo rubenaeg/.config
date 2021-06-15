@@ -1,0 +1,5 @@
+set fish_greeting
+
+# fnm
+set PATH /home/ruben/.fnm $PATH
+fnm env | source
