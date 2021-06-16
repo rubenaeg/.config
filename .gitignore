@@ -1,4 +1,6 @@
 *
 !.gitignore
-!fish
-!nvim
+!fish/
+!fish/**/*
+!nvim/
+!nvim/**/*
