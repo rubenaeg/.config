@@ -6,5 +6,6 @@
     "enable": true,
     "location": "separateLine"
   },
-  "coc.preferences.formatOnSaveFiletypes": ["js", "ts"]
+  "coc.preferences.formatOnSaveFiletypes": ["js", "ts"],
+  "prettier.singleQuote": true
 }
