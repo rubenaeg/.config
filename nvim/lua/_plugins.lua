@@ -23,4 +23,10 @@ return require('packer').startup(function()
     run = function() vim.fn['mkdp#util#install']() end,
     ft = { 'markdown' }
   }
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
 end)

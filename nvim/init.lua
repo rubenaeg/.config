@@ -1,10 +1,11 @@
-require('_shortcuts')
 require('_plugins')
 require('_lualine')
 require('_nvim-tree')
 require('_colorscheme')
 require('_telescope')
+require('_gitsigns')
 require('_dashboard')
+require('_coc')
 
 -- Indentation
 vim.opt.tabstop = 2
@@ -35,3 +36,6 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- Allow for background buffers
 vim.opt.hidden = true
+
+-- Set leader key
+vim.g.mapleader = " "
