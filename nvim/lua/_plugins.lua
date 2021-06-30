@@ -20,8 +20,8 @@ return require('packer').startup(function()
   use 'glepnir/dashboard-nvim'
   use {
     'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-    ft = { 'markdown' }
+    run = 'cd app && npx yarn install',
+    ft = 'markdown'
   }
   use {
     'lewis6991/gitsigns.nvim',
