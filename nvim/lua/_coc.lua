@@ -15,10 +15,12 @@ vim.api.nvim_set_keymap('i', '<c-space>', 'coc#refresh()', { expr = true, norema
 -- Go to definition
 vim.api.nvim_set_keymap('n', 'cd', '<Plug>(coc-definition)', { silent = true }) 
 -- Go to implementation
-vim.api.nvim_set_keymap('n', 'ci', '<Plug>(coc-implementation)', { silent = true }) 
+-- vim.api.nvim_set_keymap('n', 'ci', '<Plug>(coc-implementation)', { silent = true }) 
 -- Find references
 vim.api.nvim_set_keymap('n', 'cr', '<Plug>(coc-references)', { silent = true }) 
 -- Format with prettier
 vim.api.nvim_set_keymap('n', 'cp', ':CocCommand prettier.formatFile<cr>', {}) 
 -- Rename symbol
 vim.api.nvim_set_keymap('n', 'cn', '<Plug>(coc-rename)', {})
+-- Fix
+vim.api.nvim_set_keymap('n', 'cf', ':CocFix<cr>', {})
