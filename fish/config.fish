@@ -10,6 +10,9 @@ if [ -f '/home/ruben/apps/google-cloud-sdk/path.fish.inc' ]; . '/home/ruben/apps
 # Add flutter binary to path
 set PATH /home/ruben/apps/flutter/bin $PATH
 
+# Add python scripts to path
+set PATH /home/ruben/.local/bin $PATH
+
 set -x JAVA_HOME /usr/lib/jvm/java-8-openjdk
 set -x ANDROID_HOME /home/ruben/apps/android
 set -x ANDROID_SDK_ROOT /home/ruben/apps/android-sdk
