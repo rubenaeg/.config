@@ -6,6 +6,7 @@ require('_telescope')
 require('_gitsigns')
 require('_dashboard')
 require('_coc')
+require('_nvim-autopairs')
 
 -- Indentation
 vim.opt.tabstop = 2

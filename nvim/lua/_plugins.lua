@@ -29,4 +29,5 @@ return require('packer').startup(function()
       'nvim-lua/plenary.nvim'
     }
   }
+  use 'windwp/nvim-autopairs'
 end)
