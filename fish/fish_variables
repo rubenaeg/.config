@@ -2,7 +2,12 @@
 # VERSION: 3.0
 SETUVAR --export EDITOR:vim
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_e:exit
 SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_q:exit
+SETUVAR _fish_abbr_uexport:set\x20\x2d\x2derase
+SETUVAR _fish_abbr_unexport:set\x20\x2d\x2derase
+SETUVAR _fish_abbr_unset:set\x20\x2d\x2derase
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7

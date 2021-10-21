@@ -40,3 +40,10 @@ vim.opt.hidden = true
 
 -- Set leader key
 vim.g.mapleader = " "
+
+-- General shortcuts
+vim.api.nvim_set_keymap('n', 'tz', ':tabnext<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'tr', ':tabprevious<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'tt', ':tabnew<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'T', ':tabclose<cr>', { noremap = true })
+
