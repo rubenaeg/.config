@@ -22,3 +22,6 @@ set -x PATH /home/ruben/apps/android-sdk/cmdline-tools/latest/bin $PATH
 set PATH /home/ruben/apps/gradle/gradle-7.0.2/bin $PATH
 
 setenv EDITOR nvim
+
+# Add ngrok to path
+set PATH /home/ruben/apps/ngrok $PATH
