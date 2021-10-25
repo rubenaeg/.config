@@ -1,3 +1,12 @@
-vim.g.nb_disable_background = true
-vim.g.nb_style = 'night'
-require('nebulous').setup()
+require('nebulous').setup({
+  variant = 'night',
+  disable = {
+    background = true,
+  },
+  italic = {
+    comments   = false,
+    keywords   = false,
+    functions  = false,
+    variables  = false,
+  },
+})
