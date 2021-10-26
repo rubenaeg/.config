@@ -9,7 +9,7 @@ require('nvim-tree').setup({
     -- Height of the window, can be either a number (columns) or a string in `%`, for top or bottom side placement
     height = 30,
     -- Hide the root path of the current folder on top of the tree 
-    hide_root_folder = false,
+    hide_root_folder = true,
     -- Side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
     side = 'left',
     -- If true the tree will resize itself after opening a file
