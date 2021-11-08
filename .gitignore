@@ -6,3 +6,5 @@
 !nvim/**/*
 !latte/
 !latte/**/*
+!fontconfig/
+!fontconfig/**/*
