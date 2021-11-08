@@ -1,8 +1,8 @@
 require('telescope').setup({
-  -- defaults = { file_ignore_patterns = { 'node_modules', 'dist', 'package-lock.json' } },
+  defaults = { file_ignore_patterns = { 'node_modules', 'dist', 'package-lock.json' } },
   set_env = { ['COLORTERM'] = 'truecolor' },
-  file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
-  grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
+  file_previewer = require('telescope.previewers').vim_buffer_cat.new,
+  grep_previewer = require('telescope.previewers').vim_buffer_vimgrep.new,
 })
 
 -- Shortcuts
