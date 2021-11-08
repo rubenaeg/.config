@@ -1,6 +1,7 @@
 return require('packer').startup(function() 
 	use 'wbthomason/packer.nvim'
 	use 'Yagua/nebulous.nvim'
+  use 'marko-cerovac/material.nvim'
 	use {
 	  'hoob3rt/lualine.nvim',
 	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
