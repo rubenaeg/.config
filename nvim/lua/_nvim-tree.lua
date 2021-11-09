@@ -16,17 +16,20 @@ end
 -- Custom function to open NvimTree
 function OpenNvimTree ()
   local currentBuffer = vim.api.nvim_buf_get_name(0)
-  print(currentBuffer)
   if currentBuffer == nil or currentBuffer == '' then
-    vim.api.nvim_command('NvimTreeOpen')
+    if require('nvim-tree.view').win_open() then
+      vim.cmd('winc p')
+    else
+      vim.cmd('NvimTreeOpen')
+    end
   end
 
   local currentBufferArr = splitString(currentBuffer, '/')
   if currentBufferArr[#currentBufferArr] == 'NvimTree' then
     -- Switch to previous buffer
-    vim.api.nvim_command('bprevious')
+    vim.cmd('winc p')
   else
-    vim.api.nvim_command('NvimTreeFindFile')
+    vim.cmd('NvimTreeFindFile')
   end
 end
 
@@ -41,7 +44,7 @@ require('nvim-tree').setup({
     width = 30,
     -- Height of the window, can be either a number (columns) or a string in `%`, for top or bottom side placement
     height = 30,
-    -- Hide the root path of the current folder on top of the tree 
+    -- Hide the root path of the current folder on top of the tree
     hide_root_folder = true,
     -- Side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
     side = 'left',
