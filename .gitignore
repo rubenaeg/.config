@@ -8,3 +8,6 @@
 !latte/**/*
 !fontconfig/
 !fontconfig/**/*
+!coc/
+!coc/extensions/*
+!coc/extensions/package.json
