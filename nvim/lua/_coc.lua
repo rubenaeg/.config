@@ -24,3 +24,11 @@ vim.api.nvim_set_keymap('n', 'cp', ':CocCommand prettier.formatFile<cr>', {})
 vim.api.nvim_set_keymap('n', 'cn', '<Plug>(coc-rename)', {})
 -- Fix
 vim.api.nvim_set_keymap('n', 'cf', ':CocFix<cr>', {})
+
+-- Set global plugins to install
+vim.g.coc_global_extensions = { 
+	'coc-json', 
+	'coc-eslint',
+	'coc-prettier',
+	'coc-tsserver'
+}
