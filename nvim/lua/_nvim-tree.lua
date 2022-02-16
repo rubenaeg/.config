@@ -39,6 +39,10 @@ vim.api.nvim_set_keymap('', 'fc', ':NvimTreeClose<cr>', {})
 
 require('nvim-tree').setup({
   auto_close = true,
+  hijack_cursor = true,
+  update_focused_file = {
+    enable = true
+  },
   view = {
     -- Width of the window, can be either a number (columns) or a string in `%`, for left or right side placement
     width = 30,
