@@ -4,9 +4,6 @@ set fish_greeting
 set PATH /home/ruben/.fnm $PATH
 fnm env | source
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/ruben/apps/google-cloud-sdk/path.fish.inc' ]; . '/home/ruben/apps/google-cloud-sdk/path.fish.inc'; end
-
 # Add flutter binary to path
 set PATH /home/ruben/apps/flutter/bin $PATH
 
@@ -25,3 +22,6 @@ setenv EDITOR nvim
 
 # Add ngrok to path
 set PATH /home/ruben/apps/ngrok $PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ruben/gcloud/path.fish.inc' ]; . '/home/ruben/gcloud/path.fish.inc'; end
