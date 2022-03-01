@@ -1,0 +1,14 @@
+[autodisable]
+KeyboardActivityTimeoutMs=100
+
+[parameters]
+AccelFactor=0.05621128964711587
+CircScrollDelta=5.73
+CoastingSpeed=0
+HorizScrollDelta=3.8
+HorizTwoFingerScroll=true
+MaxSpeed=57.619705911525486
+MaxTapMove=3.8
+MinSpeed=0
+Tapping=false
+VertScrollDelta=2.1
