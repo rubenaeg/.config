@@ -4,12 +4,7 @@
 !fish/**/*
 !nvim/
 !nvim/**/*
-!latte/
-!latte/**/*
 !fontconfig/
 !fontconfig/**/*
-!coc/
-!coc/extensions/*
-!coc/extensions/package.json
 !synaptics/
 !synaptics/**/*
