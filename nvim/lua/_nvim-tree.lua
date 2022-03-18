@@ -1,3 +1,5 @@
+local tree = require('nvim-tree')
+
 -- Credit to https://stackoverflow.com/a/7615129
 local function splitString (input, seperator)
   if seperator == nil then
@@ -17,7 +19,7 @@ end
 function OpenNvimTree ()
   local currentBuffer = vim.api.nvim_buf_get_name(0)
   if currentBuffer == nil or currentBuffer == '' then
-    if require('nvim-tree.view').win_open() then
+    if tree.open() then
       vim.cmd('winc p')
     else
       vim.cmd('NvimTreeOpen')
