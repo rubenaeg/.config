@@ -1,14 +1,12 @@
 local tree = require('nvim-tree')
 
 -- Credit to https://stackoverflow.com/a/7615129
-local function splitString (input, seperator)
-  if seperator == nil then
-    seperator = "%s"
-  end
+local function splitString(input, seperator)
+  if seperator == nil then seperator = '%s' end
 
   local split = {}
 
-  for str in string.gmatch(input, "([^"..seperator.."]+)") do
+  for str in string.gmatch(input, '([^' .. seperator .. ']+)') do
     table.insert(split, str)
   end
 
@@ -16,7 +14,7 @@ local function splitString (input, seperator)
 end
 
 -- Custom function to open NvimTree
-function OpenNvimTree ()
+function OpenNvimTree()
   local currentBuffer = vim.api.nvim_buf_get_name(0)
   if currentBuffer == nil or currentBuffer == '' then
     if tree.open() then
@@ -36,15 +34,14 @@ function OpenNvimTree ()
 end
 
 -- Shortcuts
-vim.api.nvim_set_keymap('', 'ff', ':lua OpenNvimTree() <cr>', {})
-vim.api.nvim_set_keymap('', 'fc', ':NvimTreeClose<cr>', {})
+vim.api.nvim_set_keymap('n', 'ff', ':lua OpenNvimTree() <cr>', {noremap = true})
+vim.api.nvim_set_keymap('n', 'fc', ':NvimTreeClose<cr>', {noremap = true})
+vim.api.nvim_set_keymap('n', 'F', ':NvimTreeClose<cr>', {noremap = true})
 
 require('nvim-tree').setup({
   auto_close = true,
   hijack_cursor = true,
-  update_focused_file = {
-    enable = true
-  },
+  update_focused_file = {enable = true},
   view = {
     -- Width of the window, can be either a number (columns) or a string in `%`, for left or right side placement
     width = 30,
@@ -55,6 +52,6 @@ require('nvim-tree').setup({
     -- Side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
     side = 'left',
     -- If true the tree will resize itself after opening a file
-    auto_resize = true,
+    auto_resize = true
   }
 })

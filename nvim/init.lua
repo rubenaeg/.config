@@ -16,7 +16,7 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 
 vim.opt.splitright = true
-vim.opt.completeopt = { 'longest', 'menuone' }
+vim.opt.completeopt = {'longest', 'menuone'}
 
 -- Show line numbers
 vim.opt.number = true
@@ -39,16 +39,21 @@ vim.opt.clipboard = 'unnamedplus'
 vim.opt.hidden = true
 
 -- Set leader key
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
 -- General shortcuts
-vim.api.nvim_set_keymap('n', 'tz', ':tabnext<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'tr', ':tabprevious<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'tt', ':tabnew<cr>', { noremap = true })
-vim.api.nvim_set_keymap('n', 'T', ':tabclose<cr>', { noremap = true })
--- Allow faster window navigation
-vim.api.nvim_set_keymap('n', 'wq', '<c-w>h', { noremap = true })
-vim.api.nvim_set_keymap('n', 'we', '<c-w>l', { noremap = true })
+-- Tab management
+vim.api.nvim_set_keymap('n', 'tz', ':tabnext<cr>', {noremap = true})
+vim.api.nvim_set_keymap('n', 'tr', ':tabprevious<cr>', {noremap = true})
+vim.api.nvim_set_keymap('n', 'tt', ':tabnew<cr>', {noremap = true})
+vim.api.nvim_set_keymap('n', 'T', ':tabclose<cr>', {noremap = true})
+
+-- Buffer navigation
+vim.api.nvim_set_keymap('n', 'wq', '<c-w>h', {noremap = true})
+vim.api.nvim_set_keymap('n', 'we', '<c-w>l', {noremap = true})
+vim.api.nvim_set_keymap('n', 'ww', '<c-w>v', {noremap = true})
+vim.api.nvim_set_keymap('n', 'W', ':quit<cr>', {noremap = true})
 
 -- Allow arrow keys to change line
 vim.opt.whichwrap = '<,>,[,]'
+

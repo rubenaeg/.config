@@ -31,4 +31,6 @@ return require('packer').startup(function()
     }
   }
   use 'windwp/nvim-autopairs'
+  use 'dart-lang/dart-vim-plugin'
+  use 'andrejlevkovitch/vim-lua-format'
 end)
