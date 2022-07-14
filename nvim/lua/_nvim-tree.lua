@@ -60,7 +60,5 @@ require('nvim-tree').setup({
     hide_root_folder = true,
     -- Side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
     side = 'left',
-    -- If true the tree will resize itself after opening a file
-    auto_resize = true
   }
 })
