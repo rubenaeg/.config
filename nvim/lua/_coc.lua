@@ -6,7 +6,8 @@ do
     javascript = prettier,
     typescript = prettier,
     markdown = prettier,
-    json = prettier
+    json = prettier,
+    html = prettier,
   }
 
   function formatFile()
